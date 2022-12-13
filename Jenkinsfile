@@ -48,7 +48,7 @@ pipeline {
 		  steps {
 			  sh 'wget --user=admin --password=adminn http://3.109.132.157:8081/repository/jenkins-assignment/com/blazeclan/DevOpsDemo/14/DevOpsDemo-14.war'
 			  deploy adapters: [
-				  tomcat8(credentialsId: 'tomcat', 
+				  tomcat9(credentialsId: 'tomcat2', 
 					  path: '', 
 					  url: 'http://13.235.242.99:8080/')
 			  ], 
