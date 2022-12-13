@@ -4,6 +4,9 @@ pipeline {
       label 'java-app'
     }
   }
+ tools { 
+     maven 'Maven' 
+ }		
   stages{
 	stage(" Maven Build"){
 		steps{
